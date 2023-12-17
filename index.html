@@ -19,7 +19,9 @@
       Create a form with a date input asking "What is your birth date?", a
       submit button "Submit" and the form should send the date to /submit
     </p>
-    <input type="date" name="" id="" />
+    <form action="/submit"></form>
+    <label for="date">What is your birth date?</label>
+    <input type="date" name="" id="date" />
 
     <h3>Challenge 3</h3>
     <p>
@@ -27,11 +29,52 @@
       blue, yellow and red as options
     </p>
 
+    <label for="color">What is your favorite primary color?</label>
+    <div>
+      <input type="radio" name="color" id="red" /><label for="red">Red</label>
+    </div>
+
+    <div>
+      <input type="radio" name="color" id="blue" /><label for="blue"
+        >Blue</label
+      >
+    </div>
+    <div>
+      <input type="radio" name="color" id="yellow" /><label for="yellow"
+        >Yellow</label
+      >
+    </div>
+
     <h3>Challenge 4</h3>
     <p>
       Create checkbox inputs asking "How do you like to travel?" with plane,
       bus, train, car, walking as options
     </p>
+    <label>How do you like to travel?</label>
+    <div>
+      <input type="checkbox" name="transport" id="plane" />
+      <label for="plane">Plane</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="transport" id="bus" />
+      <label for="bus">Bus</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="transport" id="train" />
+      <label for="train">Train</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="transport" id="car" />
+      <label for="car">Car</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="transport" id="walking" />
+      <label for="walking">Walking</label>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
